@@ -1,0 +1,146 @@
+body{
+	background: url("image/background.jpg") no-repeat center fixed;
+	background-size:cover;
+	letter-spacing:.1em;
+	
+}
+.parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2;
+		width: 150px;
+
+ }
+.div2 { grid-area: 2 / 1 / 3 / 4;
+		display:block;
+		width:100%;
+		margin-bottom:auto;
+		background-color:#333;
+
+ }
+.div3 { grid-area: 3 / 2 / 4 / 3;
+		background-attachment:scroll;
+		text-align:center;
+		background-color:#fbb5f6;
+		background-clip:content-box;
+		color:black;
+		box-shadow:2px 2px 2px black;
+
+ }
+.div4 { grid-area: 1 / 2 / 2 / 4;
+		background-attachment:fixed;
+		height:138px;
+
+ }
+ 
+.div3 p{margin:5px;	
+}
+
+
+#enveloppe{
+		padding-right:7px;
+		background-image: url("image/enveloppe.png");
+		background-position: 10% 50%;
+		background-repeat: no-repeat;
+		
+	
+	
+}
+.logo{
+	width:1172px; 
+	height:138px;
+	margin-top:21.828px;
+	margin-bottom:21.828px;
+}
+
+ul.classic {
+	list-style: disc;
+	margin-bottom: 1em;
+	padding-left: 2em;
+	}
+
+.dropdown-upward {
+	margin-top: 400px;
+	}
+ul.dropdown, ul.dropdown li, ul.dropdown ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+	
+ul.dropdown {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	}
+	
+ul.dropdown li {
+	float: left; 
+	vertical-align:middle;	
+	}
+	
+ul.dropdown li.hover,ul.dropdown li:hover {
+	position: relative;
+	z-index: 599;
+	cursor: default;
+	
+	}
+ul.dropdown ul {
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 598;
+	
+	}
+ul.dropdown ul li {
+	float: none;
+	}
+
+ul.dropdown ul ul {
+	top: 0;
+	left: 100%;
+	}
+	
+ul.dropdown li:hover > ul {
+	visibility: visible;
+	}
+	
+ul.dropdown li {
+	background-color: #333;
+	color: white;
+	}
+ul.dropdown li.active {
+	background-color: #33A5FF;
+	color: white;
+	}	
+ul.dropdown li.hover,ul.dropdown li:hover 
+	{ 
+	background-color: #111;
+	}
+
+ul.dropdown ul {
+	width: 230px;
+	margin-top: 0px;
+	}
+	
+ul.dropdown ul li {
+	font-weight: normal;
+	}
+	
+.active {
+  background-color: #33A5FF;
+}
+ul.dropdown a {
+  display: block;
+  color: white;
+  padding:14px 50px;
+  text-align: center;
+  text-decoration: none;
+}
