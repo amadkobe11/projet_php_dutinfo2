@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de compte fournisseur</title>
+    <link href="../Css/CreationCompteFournisseur.css" media="all" rel="stylesheet" type="text/css" />
+	<link rel="icon" type="image/png" href="../Image/logo.png" />
+</head>
+<body>
+    <div class="grid-container">
+        <div class="up"></div>
+        <div class="center">
+            <form action="" class="form">
+                <div class="element">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom">
+                </div>
+
+                <div class="element">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom">
+                </div>
+
+                <div class="element">
+                    <label for="mdp">Mot de passe :</label>
+                    <input type="text" id="mdp" name="mdp">
+                </div>
+        
+                <div class="element">
+                    <label for="email">Email :</label>
+                    <input type="text" id="email" name="email">
+                </div>
+
+                <div class="element">
+                    <p class="label">Choisissez vos lieux de références :</p>
+                <div class = "checkbox">
+                    <div class="Lieu">
+                        <input type='checkbox' id='Valenciennes' name='lieu[]' value='Valenciennes'>
+                        <label for='Valenciennes'>Valenciennes</label>
+                    </div>
+
+                    <div class="Lieu">
+                        <input type='checkbox' id='Maubeuge' name='lieu[]' value='Maubeuge'>
+                        <label for='Maubeuge'>Maubeuge</label>
+                    </div>
+
+                    <div class="Lieu">
+                        <input type='checkbox' id='Douai' name='lieu[]' value='Douai'>
+                        <label for='Douai'>Douai</label>
+                    </div>
+
+                    <div class="Lieu">
+                        <input type='checkbox' id='Denain' name='lieu[]' value='Denain'>
+                        <label for='Denain'>Denain</label>
+                    </div>
+
+                </div>
+                </div>
+
+                <div class="element">
+                    <div>
+                        <label for="banque" class = "compte">Compte bancaire (nom de la banque) :</label>
+                        <input type="text" id="banque" name="banque" class = "compte_in">
+                    </div>
+                </div>
+                <div class ="element">
+                    <div class="element_B">
+                        <button type="submit" class="button" >Créer le compte</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
