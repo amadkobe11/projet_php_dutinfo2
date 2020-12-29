@@ -1,0 +1,44 @@
+body{
+	background-color:#78FF78;
+	background-size:cover;
+	width: auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". up ."
+      ". center ."
+      ". . .";
+      height: 20cm;
+  }
+  .center{
+    grid-area: center;
+    margin-left : 25%;
+    margin-right : 25%;
+    background-color:#676767;
+    height: auto;
+  }
+  .button{
+      text-align: center;
+      border-radius: 7px;
+      border-color:transparent;
+      background-color: white;
+  }
+  .button:hover{
+      background-color: rgb(228, 226, 226);
+  }
+  .empty_space{
+      grid-area: up;
+      height: 8cm;
+  }
+  .element{
+    padding-top: 23%;
+    margin-left: 27%;
+  }
+  .element2{
+    padding-top: 0.5cm;
+    margin-left: 22%;
+  }

@@ -1,0 +1,67 @@
+body{
+	background-color:#78FF78;
+	background-size:cover;
+	
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". up ."
+      ". center ."
+      ". . .";
+    height: 20cm;
+  }
+.center{
+    grid-area: center;
+    margin : auto;
+    width: auto;
+    height: auto;
+    background-color:#676767;
+}
+.button{
+    margin: auto;
+    text-align: center;
+    border-radius: 7px;
+    border-color:transparent;
+    background-color: white;
+
+}
+.button:hover{
+    background-color: rgb(228, 226, 226);
+}
+.element{
+    padding-top: 0.5cm;
+    margin-left: 19%;
+}
+.element_B1{
+    margin-left: 25%;
+    padding-bottom: 0.5cm;
+}
+.element_B2{
+    margin-left: 18%;
+    padding-bottom: 0.5cm;
+}
+.form{
+    margin: auto;
+}
+
+.checkbox{
+    margin-left:25%;
+}
+.label{
+    margin-left: 10%;
+}
+.up{
+    grid-area: up;
+    height: auto;
+}
+
+.compte{
+    margin-left: 8%;
+}
+.compte_in{
+    margin-left:15.5%;
+}
