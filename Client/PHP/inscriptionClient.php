@@ -14,7 +14,7 @@
         $banque = $_POST['banque'];
 
         if((!empty($prenom)) && (!empty($nom)) && (!empty($mdp)) && (!empty($email)) && (!empty($lieu)) && (!empty($banque))){
-            $request = $client -> request('POST','http://localhost/Projet/Serveur/inscriptionClient.php',['form_params'=>['prenom'=> $prenom,'nom'=>$nom, 'mdp'=>$mdp, 'email'=>$email, 'lieu'=>$lieu,'banque'=>$banque]]);
+            $request = $client -> request('POST','http://localhost/Projet/Serveur/PHP/inscriptionClient.php',['form_params'=>['prenom'=> $prenom,'nom'=>$nom, 'mdp'=>$mdp, 'email'=>$email, 'lieu'=>$lieu,'banque'=>$banque]]);
             header('Location: http://localhost/Projet/Client/HTML/Connexion.html');
             Exit();
         }

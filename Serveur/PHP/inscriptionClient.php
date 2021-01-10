@@ -15,26 +15,27 @@
             $lieu = $_POST['lieu'];
             $banque = $_POST['banque'];
             
-            $query=$pdo->prepare("INSERT INTO Client values (DEFAULT,'$prenom','$nom','$mdp','$email','$banque')");
+            $query=$pdo->prepare("INSERT INTO client values (DEFAULT,'$prenom','$nom','$mdp','$email','$banque')");
               
             $request=$query->execute();
             
             $id = $pdo->lastInsertId();
+            
             foreach($lieu as $ville){
-              if(strcmp ( $ville ,'Maubeuge')){
-                $query=$pdo->prepare("INSERT INTO LieuClient values (1,$id)");
+              if(!strcmp ( $ville ,"Maubeuge")){
+                $query=$pdo->prepare("INSERT INTO lieuclient values (1,$id)");
               
                 $request=$query->execute();
-              }elseif(strcmp ( $ville ,'Douai')){
-                $query=$pdo->prepare("INSERT INTO LieuClient values (2,$id)");
+              }elseif(!strcmp ( $ville ,"Douai")){
+                $query=$pdo->prepare("INSERT INTO lieuclient values (2,$id)");
               
                 $request=$query->execute();
-              }elseif(strcmp ( $ville ,'Denain')){
-                $query=$pdo->prepare("INSERT INTO LieuClient values (3,$id)");
+              }elseif(!strcmp ( $ville ,"Denain")){
+                $query=$pdo->prepare("INSERT INTO lieuclient values (3,$id)");
               
                 $request=$query->execute();
-              }elseif(strcmp ( $ville ,'Valenciennes')){
-                $query=$pdo->prepare("INSERT INTO LieuClient values (4,$id)");
+              }elseif(!strcmp ( $ville ,"Valenciennes")){
+                $query=$pdo->prepare("INSERT INTO lieuclient values (4,$id)");
               
                 $request=$query->execute();
               }

@@ -52,10 +52,10 @@ values (1,'Adrien','Chauvency','HUP42','adrienchauvency@wanadoo.fr',DEFAULT,'Ban
        (2,'Bryan','Moreau','BMW36','bryanmoreau5040@gmail.com',DEFAULT,'Société général');
 
 insert into Produit
-values (1,'Dakimakura',100,200,'C:\laragon\www\Projet\Client\Image\Dakimakura.jpg',null,'Accessoire de literie',1),
-       (2,'Accessoire déguisement chat',10,30,'C:\laragon\www\Projet\Client\Image\Chat.jpg',null,'Deguisement',1),
-       (3,'Kit Kat',0.50,100,'C:\laragon\www\Projet\Client\Image\KitKat.jpg',10,'Nourriture',2),
-       (4,'Coca Cola',1.20,10,'C:\laragon\www\Projet\Client\Image\Coca.jpg',20,'Boisson',2);
+values (1,'Dakimakura',100,200,'../../Client/Image/Dakimakura.jpg',null,'Accessoire de literie',1),
+       (2,'Accessoire déguisement chat',10,30,'../../Client/Image/Chat.jpg',null,'Deguisement',1),
+       (3,'Kit Kat',0.50,100,'../../Client/Image/KitKat.jpg',10,'Nourriture',2),
+       (4,'Coca Cola',1.20,10,'../../Client/Image/Coca.jpg',20,'Boisson',2);
 
 insert into Client
 values (1,'Gaylord','Delporte','GAY11','Gaylord@mail.de','Banque de France');

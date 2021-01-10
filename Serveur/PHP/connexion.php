@@ -22,7 +22,6 @@
 
             $reponse2=$query2->fetchAll();
 
-            $donne=[];
             $reponse;
 
             if((!empty($reponse)) || (!empty($reponse2))){

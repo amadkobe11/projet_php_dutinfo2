@@ -9,7 +9,7 @@
         $email = $_POST['email'];
         $mdp = $_POST['mdp'];
 
-        $request = $client -> request('POST','http://localhost/Projet/Serveur/connexion.php',['form_params'=>['email'=> $email,'mdp'=>$mdp]]);
+        $request = $client -> request('POST','http://localhost/Projet/Serveur/PHP/connexion.php',['form_params'=>['email'=> $email,'mdp'=>$mdp]]);
         $reponse = json_decode($request -> getBody());
 
         if($reponse[0] == "fournisseur"){

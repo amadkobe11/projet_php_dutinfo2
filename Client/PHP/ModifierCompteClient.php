@@ -15,7 +15,7 @@
         $banque = $_POST['banque'];
         $id = $_SESSION['id'];
 
-            $request = $client -> request('POST','http://localhost/Projet/Serveur/ModifierCompteClient.php',['form_params'=>['prenom'=> $prenom,'nom'=>$nom, 'mdp'=>$mdp, 'lieu'=>$lieu,'banque'=>$banque,'id'=>$id]]);
+            $request = $client -> request('POST','http://localhost/Projet/Serveur/PHP/ModifierCompteClient.php',['form_params'=>['prenom'=> $prenom,'nom'=>$nom, 'mdp'=>$mdp, 'lieu'=>$lieu,'banque'=>$banque,'id'=>$id]]);
             header('Location: http://localhost/Projet/Client/HTML/AccueilClient.html');
             //Exit();
 

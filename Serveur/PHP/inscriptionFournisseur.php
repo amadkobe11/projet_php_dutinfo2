@@ -20,23 +20,28 @@
             $request=$query->execute();
             
             $id = $pdo->lastInsertId();
+
             foreach($lieu as $ville){
-              if(strcmp ( $ville ,'Maubeuge')){
+              if(!strcmp ( $ville ,"Maubeuge")){
                 $query=$pdo->prepare("INSERT INTO LieuFournisseur values (1,$id)");
               
                 $request=$query->execute();
-              }elseif(strcmp ( $ville ,'Douai')){
+
+              }elseif(!strcmp ( $ville ,"Douai")){
                 $query=$pdo->prepare("INSERT INTO LieuFournisseur values (2,$id)");
               
                 $request=$query->execute();
-              }elseif(strcmp ( $ville ,'Denain')){
+
+              }elseif(!strcmp ( $ville ,"Denain")){
                 $query=$pdo->prepare("INSERT INTO LieuFournisseur values (3,$id)");
               
                 $request=$query->execute();
-              }elseif(strcmp ( $ville ,'Valenciennes')){
+
+              }elseif(!strcmp ( $ville ,"Valenciennes")){
                 $query=$pdo->prepare("INSERT INTO LieuFournisseur values (4,$id)");
               
                 $request=$query->execute();
+                
               }
             }
         }

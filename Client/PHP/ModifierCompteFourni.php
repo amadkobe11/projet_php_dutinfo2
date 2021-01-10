@@ -17,7 +17,7 @@
 
         var_dump($_POST);
 
-            $request = $client -> request('POST','http://localhost/Projet/Serveur/ModifierCompteFourni.php',['form_params'=>['prenom'=> $prenom,'nom'=>$nom, 'mdp'=>$mdp, 'lieu'=>$lieu,'banque'=>$banque,'id'=>$id]]);
+            $request = $client -> request('POST','http://localhost/Projet/Serveur/PHP/ModifierCompteFourni.php',['form_params'=>['prenom'=> $prenom,'nom'=>$nom, 'mdp'=>$mdp, 'lieu'=>$lieu,'banque'=>$banque,'id'=>$id]]);
             header('Location: http://localhost/Projet/Client/HTML/AccueilFourni.html');
             //Exit();
 
