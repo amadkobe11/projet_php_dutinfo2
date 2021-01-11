@@ -1,7 +1,8 @@
 body {
-    background-color:rgb(120, 255, 120);
+	background: url("../Image/background.jpg") no-repeat center fixed;
+	background-size:cover;
+	background-color:rgb(120, 255, 120);
 }
-
 .client {
     float : right;
     background-color:#fcac00;
@@ -20,31 +21,34 @@ body {
 }
     
 .div1 { grid-area: 1 / 1 / 2 / 2;
-            width: fit-content;
-            height: fit-content;
-    
+	width: fit-content;
+	height: fit-content;
+	margin :0;
+
 }
 .div2 { grid-area: 2 / 1 / 3 / 4;
-            display:block;
-			width:100%;
-			height : 48px;
-            background-color:#676767;
-    
+	display:block;
+	width:100%;
+	height : 46px;
+	background-color:#676767;
+	margin-top: 2cm;
+
 }
 .div3 { grid-area: 3 / 2 / 4 / 3;
-            background-attachment:scroll;
-            text-align:center;
-            background-color:#fcac00;
-            background-clip:content-box;
-            color:black;
-			box-shadow:2px 2px 2px black;
-			height : fit-content;
- }
+	background-attachment:scroll;
+	text-align:center;
+	background-color:#fcac00;
+	background-clip:content-box;
+	color:black;
+	box-shadow:2px 2px 2px black;
+	height : fit-content;
+	margin-top: 2cm;
+}
 .div4 { grid-area: 1 / 2 / 2 / 4;
-            background-attachment:fixed;
-            height:fit-content;
-    
- }
+	background-attachment:fixed;
+	height:fit-content;
+
+}
      
 .div3 p{margin:5px;	
 }

@@ -1,7 +1,8 @@
 body{
+  background: url("../Image/background.jpg") no-repeat center fixed;
+	
 	background-color:#78FF78;
 	background-size:cover;
-	width: auto;
 }
 .grid-container {
     display: grid;

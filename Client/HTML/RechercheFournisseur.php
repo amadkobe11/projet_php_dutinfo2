@@ -19,14 +19,13 @@
             $request = $client -> request('POST','http://localhost/Projet/Serveur/PHP/RechercheFournisseur.php',['form_params'=>['id'=>$id]]);
 
             $fournisseur = json_decode($request->getBody(),true);
-           
-            
+                       
             ?>
 
               <div class="parent">
-                <h1 class="div1">Horizon</h1>
+                <h1 class="div1"><img style = "height: 3.5cm; width: auto;" src="../Image/logo2.jpg"></h1>
                 <div class="div4">
-                  <p class="client"> Bienvenue </br><a href="ModifierCompteClient.html">modifier compte</a></p>
+                  <p class="client"> Bienvenue </br><a href="ModifierCompteClient.html">modifier compte</a></br><a href="../PHP/Deconnexion.php">deconnexion</a></p>
                 </div>
                 <div class="div2">
                 <nav class="menus">
@@ -47,6 +46,9 @@
                 </div>
                 <div class="div3">
                     <?php
+                        if(empty($fournisseur)){
+                          echo ("Pas de fournisseur proche");
+                        }
                         foreach($fournisseur as $key => $valeur){
 
                     ?>
